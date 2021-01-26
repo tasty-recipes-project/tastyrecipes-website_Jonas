@@ -18,52 +18,61 @@
     $difficulty = $_POST['Schwierigkeitsgrad'];
     $dauer = $_POST['dauer'];
     $kategorie = $_POST['kategorie'];
-    $rezeptBild = $_POST['upload'];
+    $rezeptBild = $_FILES['image']['name'];
+
+    $target = "uploads/".basename($_FILES['image']['name']);
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+
+        $nachricht = "Das Bild wurde erfolgreich hochgeladen";
+
+    } else {
+        $nachricht = "Ein Problem ist aufgetreten";
+    }
 
 
-	$schritt1 = $_POST['schritt1'];
-	$schritt2;
-	$schritt3;
-	$schritt4;
-	$schritt5;
-	$schritt6;
-	$schritt7;
-	$schritt8;
-	$schritt9;
-	$schritt10;
+  	$schritt1 = $_POST['schritt1'];
+  	$schritt2;
+  	$schritt3;
+  	$schritt4;
+  	$schritt5;
+  	$schritt6;
+  	$schritt7;
+  	$schritt8;
+  	$schritt9;
+  	$schritt10;
 
-	$Zutat1 = $_POST['zutat1'];
-	$Zutat2;
-	$Zutat3;
-	$Zutat4;
-	$Zutat5;
-	$Zutat6;
-	$Zutat7;
-	$Zutat8;
-	$Zutat9;
-	$Zutat10;
+  	$Zutat1 = $_POST['zutat1'];
+  	$Zutat2;
+  	$Zutat3;
+  	$Zutat4;
+  	$Zutat5;
+  	$Zutat6;
+  	$Zutat7;
+  	$Zutat8;
+  	$Zutat9;
+  	$Zutat10;
 
-	$Menge1 = $_POST['menge1'];
-	$Menge2;
-	$Menge3;
-	$Menge4;
-	$Menge5;
-	$Menge6;
-	$Menge7;
-	$Menge8;
-	$Menge9;
-	$Menge10;
+  	$Menge1 = $_POST['menge1'];
+  	$Menge2;
+  	$Menge3;
+  	$Menge4;
+  	$Menge5;
+  	$Menge6;
+  	$Menge7;
+  	$Menge8;
+  	$Menge9;
+  	$Menge10;
 
-	$Einheit1 = $_POST['einheit1'];
-	$Einheit2;
-	$Einheit3;
-	$Einheit4;
-	$Einheit5;
-	$Einheit6;
-	$Einheit7;
-	$Einheit8;
-	$Einheit9;
-	$Einheit10;
+  	$Einheit1 = $_POST['einheit1'];
+  	$Einheit2;
+  	$Einheit3;
+  	$Einheit4;
+  	$Einheit5;
+  	$Einheit6;
+  	$Einheit7;
+  	$Einheit8;
+  	$Einheit9;
+  	$Einheit10;
 
 
     //Fehlerbehandlung wenn ein Feld nicht ausgefüllt ist

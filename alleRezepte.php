@@ -50,45 +50,10 @@
 
                                 echo('<div class="col-lg-12"');
                                     ?>
-                                    <p><a href="#"><img class="recipe-img" src="uploads/<?php echo $row['Bild']; ?>" alt=""></a></p>
+                                    <p><a href="#"><img class="recipe-img" src="includes/uploads/<?php echo $row['Bild']; ?>" alt=""></a></p>
                                     <?php
                                 echo('</div>');
 
-
-                        //Zutaten Liste
-
-                                echo('<div class="col-lg-12"');
-                                    echo('<p><b><h4>Zutatenliste: </h4></b></p>');
-                                echo('</div>');
-                                //Tabelle für die Ausgabe der Zutatenliste
-                                echo('<table>');
-                                    echo('<tr>');
-
-                                    //Tabellen Header
-                                        echo('<tr>');
-                                        echo('<td>Zutat</td>');
-                                        echo('<td>Menge</td>');
-                                        echo('<td>Einheit</td>');
-                                        echo('</tr>');
-                                    //Tabellen Header Ende
-
-                                    //Content aus Datenbank
-                                        echo('<tr>');
-                                        echo('<td>' . $row['Zutat'] .'</td>');
-                                        echo('<td>Menge</td>');
-                                        echo('<td>Einheit</td>');
-                                        echo('</tr>');
-                                    //Content Ende
-                                echo('</table>');
-
-                        //Bearbeitungsschritte
-
-                        echo('<div class="col-lg-12"');
-                                    echo('<p><b><h4>Bearbeitungsschritte: </h4></b></p>');
-                        echo('</div>');
-                        echo('<div class="col-lg-12"');
-                                    echo('<p>Schritt 1: ' . $row['Schritt'] . '</p>');
-                        echo('</div>');
 
                         //ErstellerInfo
 

@@ -11,7 +11,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<form action="includes/upload.inc.php" method = "post">
+		<form action="includes/upload.inc.php" method = "post" enctype="multipart/form-data">
 		<h1>Rezept hochladen</h1>
 
 		<p>
@@ -236,7 +236,7 @@
 		<p>
 			<!-- <form action="manage_uploads.php" method="post" enctype="multipart/form-data"> -->
 			<label class="upload-text">Bilder hochladen:</label>
-			<input id="upload" name="upload" type="file"><br/>
+			<input id="image" name="image" type="file"><br/>
 
 			<!--	<button>hochladen</button>
 			</form> -->
