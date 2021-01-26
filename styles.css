@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* ab hier CSS Content hauptsächlich für den Header Bereich */
+
+.website-name {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 41.5px;
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+.website-name:hover {
+  text-decoration: none;
+  color: black;
+  /*color: green; */
+}
+
+.header-top {
+  width: 100%;
+  margin: 0px;
+}
+
+.navmenu {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navmenu-col {
+  width: 100%;
+}
+
+.col-lg-5  {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  float: right;
+}
+
+.col-lg-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+}
+
+.col-lg-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+
+}
+
+.col-lg-8 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Suchfeld */
+
+.search-container {
+  background-color: white;
+  color: black;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  float: right;
+  width: 100%;
+}
+
+.search-button, .input-select, .input-search {
+  float: right;
+}
+
+.input-search__feld {
+  height: 48px;
+  padding: 5px;
+  border: 1px solid;
+  border-right: none;
+  border-color: green;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+.search-select {
+  height: 48px;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  font-size: 16px;
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+.search-button__btn {
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Navigationsmenu */
+
+.navbar {
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: green;
+}
+
+.menu {
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.menu-li, .dropdown, .userdropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.dropbtn, .menu-li-a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.dropdowncontent-a:hover, .menu-li-a:hover, .dropdown:hover .dropbtn{
+  text-decoration: none;
+  color: green;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdowncontent-a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Usermenu */
+
+.userdropdown {
+  float: right;
+}
+
+.usrdropbtn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.userdropdown:hover .usrdropbtn{
+  text-decoration: none;
+  color: green;
+}
+
+.userdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.userdropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.userdropdown:hover .userdropdown-content {
+  display: block;
+}
+
+/* Login Seite */
+
+.login {
+  padding: 0px;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.login-content {
+  max-width: 350px;
+  height: 420px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-formular {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.input-username {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.input-username__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-password {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.input-password__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-button {
+  position: relative;
+  margin: 32px 0;
+}
+
+.login-button__btn {
+  background-color: green;
+  min-height: 44px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+.register-link {
+  float: left;
+}
+
+.register-link__link {
+  float: left;
+  color: green;
+  text-decoration: none;
+}
+
+.login_area {
+    background-color: #f0f0f0;
+    color: black;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Ende der Login Seite */
+
+/* Registrieren Seite */
+
+.register {
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.register-content {
+  max-width: 350px;
+  height: 520px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.register-formular {
+  position: relative;
+}
+
+.register-username {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.register-username__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-mail {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.register-mail__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-pwd {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.register-pwd__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-pwd-wdh {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.register-pwd-wdh__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-button {
+  position: relative;
+  margin: 32px 0;
+}
+
+.register-button__btn {
+  background-color: green;
+  min-height: 44px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+.login-link {
+  float: left;
+}
+
+.login-link__link {
+  float: left;
+  color: green;
+  text-decoration: none;
+}
+
+.register-area {
+  background-color: #f0f0f0;
+  color: black;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Ende der Registrieren Seite */
+
+/*header CSS Ende */
+
+
+/* CSS Main Content */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.main_content {
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+/*CSS bezieht sich auf den Registrierungsprozess */
+.anmeldeFehler {
+    color: red;
+    font-size: 20px;
+}
+
+.erfolgreicheAnmeldung {
+    color: green;
+    font-size: 20px;
+}
+
+
+/* Nachfolgendes CSS bezieht sich auf die Trennlininen z.B. unter Unsere besten Kategorien */
+.hr_black {
+    width: 30%;
+    height: 5px;
+    background-color: black;
+    margin-left: 0px;
+}
+
+
+/*CSS Slider */
+.w3-red {
+    background-color: red;
+}
+
+.w3-center {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+
+/*Was kochen Bereich */
+.waskochen {
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.kat1 h2 {
+    text-align: center;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.kat1 img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.kat2 img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.kat3 img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.kat2 h2 {
+    text-align: center;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.kat3 h2 {
+    text-align: center;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.kategorien {
+    width: 100%;
+    background: linear-gradient(60deg, green, yellowgreen);
+    text-align: center;
+    margin: 0px;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.waskochen_button {
+    margin-top: 20px;
+    width: 60%;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Beginn Profilbereich */
+
+.profile_container {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-navmenu {
+  height: 200px;
+  width: 225px;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  float: left;
+  background-color: #f0f0f0;
+}
+
+.profilenavmenu-ul {
+  padding: 15px;
+}
+
+.profilenavmenu-li {
+  padding-bottom: 10px;
+}
+
+.profilenavmenu-li-a {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.profilenavmenu-li-a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.profile_content {
+  height: 100%;
+  width: 70%;
+  float: left;
+  padding: 15px;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.myData-left {
+  width: 33%;
+  height: 70%;
+  float: left;
+}
+
+.myData-right {
+  width: 66%;
+  height: 70%;
+  float: left;
+}
+
+.myData-edit_pw {
+  width: 100%;
+  height: 80%;
+  padding: 0;
+}
+
+.myData {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.myData_error {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.edit {
+  float: right;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: green;
+  margin-right: 260px;
+}
+
+.edit:hover {
+  text-decoration: none;
+  color: green;
+}
+
+
+/* Ende Profilbereich */
+
+/* Footer Bereich */
+
+.container-footer {
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  padding-top: 40px;
+  margin: 0px;
+  border: 0px;
+}
+
+.footer-left {
+  width: 33%;
+  float: left;
+  text-align: left;
+}
+
+.footer-center {
+  width: 33%;
+  float: left;
+  text-align: left;
+}
+
+.footer-right {
+  width: 33%;
+  float: right;
+  text-align: left;
+}
+
+.footer-company-about {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-items {
+  text-decoration: none;
+
+}
+
+/* Rezept hochladen */
+.upload-text {
+	color: green;
+}
+
+.input-rezeptname__feld {
+  width: 100%;
+  min-height: 2.75rem;
+  line-height: 1.375rem;
+  padding: 5px;
+  border: 1px solid;
+  border-color: green;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+
+}
+
+/* Bereich für die Rezeptseiten */
+
+.duration {
+  background-color: grey;
+  color: white;
+}
+
+table, tr, td {
+  border: 1px solid black;
+}
+
+.rezept_Info {
+  border: 1px solid green;
+  margin-top: 10px;
+}
+
+.rezept_header {
+  background: linear-gradient(65deg, lightgreen, green);
+  color: white;
+}
